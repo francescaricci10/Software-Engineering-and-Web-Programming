@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="610.0" prefWidth="714.0" style="-fx-background-color: powderblue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginPackage.ViewPrenotazioni">
+   <children>
+      <Button layoutX="64.0" layoutY="504.0" mnemonicParsing="false" onAction="#creaPrenotazione" style="-fx-background-color: mintcream;" text="Ok" />
+      <Label layoutX="60.0" layoutY="175.0" text="Giorno:" />
+      <Label layoutX="269.0" layoutY="180.0" text="Mese:" />
+      <Label layoutX="469.0" layoutY="180.0" text="Anno:" />
+      <Label layoutX="59.0" layoutY="355.0" text="Capienza Aula:" />
+      <Label layoutX="59.0" layoutY="432.0" text="Titolo Conferenza:" />
+      <TextField fx:id="titoloConferenza" layoutX="217.0" layoutY="427.0" prefHeight="27.0" prefWidth="323.0" style="-fx-background-color: mintcream;" />
+      <ImageView fitHeight="89.0" fitWidth="353.0" layoutX="375.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo-TorVergata-iloveimg-resized.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="65.0" layoutY="58.0" text="Prenotazione Aula ">
+         <font>
+            <Font name="System Italic" size="25.0" />
+         </font></Label>
+      <ComboBox fx:id="giorno" layoutX="122.0" layoutY="175.0" prefHeight="27.0" prefWidth="65.0" style="-fx-background-color: mintcream;" />
+      <ComboBox fx:id="mese" layoutX="328.0" layoutY="175.0" prefHeight="27.0" prefWidth="65.0" style="-fx-background-color: mintcream;" />
+      <ComboBox fx:id="anno" layoutX="526.0" layoutY="175.0" prefHeight="27.0" prefWidth="114.0" style="-fx-background-color: mintcream;" />
+      <ComboBox fx:id="capienza" layoutX="173.0" layoutY="350.0" prefHeight="27.0" prefWidth="88.0" style="-fx-background-color: mintcream;" />
+      <CheckBox fx:id="proiettore" layoutX="365.0" layoutY="355.0" mnemonicParsing="false" style="-fx-background-image: mintcream;" text="Proiettore" />
+      <CheckBox fx:id="microfono" layoutX="511.0" layoutY="355.0" mnemonicParsing="false" text="Microfono" />
+      <ComboBox fx:id="oraFine" layoutX="393.0" layoutY="263.0" prefHeight="27.0" prefWidth="65.0" style="-fx-background-color: mintcream;" />
+      <ComboBox fx:id="oraInizio" layoutX="155.0" layoutY="263.0" prefHeight="27.0" prefWidth="65.0" style="-fx-background-color: mintcream;" />
+      <Label layoutX="59.0" layoutY="268.0" text="Ora Inizio: " />
+      <Label layoutX="306.0" layoutY="268.0" text="Ora Fine: " />
+      <Label fx:id="risultato" layoutX="209.0" layoutY="509.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="ris" layoutX="209.0" layoutY="542.0" />
+      <Label layoutX="65.0" layoutY="98.0" text="(per conferenza)" />
+   </children>
+</AnchorPane>

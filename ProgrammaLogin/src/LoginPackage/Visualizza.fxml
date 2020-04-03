@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="570.0" prefWidth="714.0" style="-fx-background-color: powderblue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginPackage.ViewVisualizzazione">
+   <children>
+      <Button layoutX="195.0" layoutY="505.0" mnemonicParsing="false" onAction="#creaDataInizio" text="cerca" />
+      <ImageView fitHeight="89.0" fitWidth="411.0" layoutX="366.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo-TorVergata-iloveimg-resized.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="34.0" layoutY="77.0" text="Ricerca Prenotazioni ">
+         <font>
+            <Font size="25.0" />
+         </font></Label>
+      <TableView fx:id="tablePrenotazioni" layoutX="42.0" layoutY="309.0" prefHeight="177.0" prefWidth="648.0">
+        <columns>
+          <TableColumn fx:id="colAula" prefWidth="82.0" text="Aula" />
+          <TableColumn fx:id="colGiorno" prefWidth="76.0" text="Giorno" />
+            <TableColumn fx:id="colMese" prefWidth="74.0" text="Mese" />
+            <TableColumn fx:id="colAnno" prefWidth="84.0" text="Anno" />
+            <TableColumn fx:id="colOraInizio" prefWidth="74.0" text="Ora Inizio" />
+            <TableColumn fx:id="colOraFine" prefWidth="75.0" text="Ora Fine" />
+            <TableColumn fx:id="colTitoloConf" prefWidth="182.0" text="Titolo Conferenza" />
+        </columns>
+      </TableView>
+      <Label layoutX="42.0" layoutY="510.0" text="Cerca Prenotazioni: " />
+      <Label layoutX="42.0" layoutY="230.0" text="Data Corrente: " />
+      <Label layoutX="42.0" layoutY="268.0" text="Visualizza Data Corrente: " />
+      <Button layoutX="213.0" layoutY="263.0" mnemonicParsing="false" onAction="#mostraDataCorrente" text="Ok" />
+      <Label fx:id="dataCorrente" layoutX="153.0" layoutY="230.0" text="......................" />
+      <Label fx:id="labelError" layoutX="347.0" layoutY="510.0" />
+      <Label layoutX="42.0" layoutY="190.0" text="Visualizzazione prenotazioni attive" />
+      <Label layoutX="383.0" layoutY="190.0" text="Visualizzazione storico prenotazioni" />
+      <Label layoutX="383.0" layoutY="230.0" text="Anno accademico:" />
+      <ComboBox fx:id="annoAccademico" layoutX="528.0" layoutY="225.0" prefHeight="27.0" prefWidth="94.0" />
+      <Button layoutX="383.0" layoutY="263.0" mnemonicParsing="false" onAction="#creaStorico" text="Cerca" />
+   </children>
+</AnchorPane>

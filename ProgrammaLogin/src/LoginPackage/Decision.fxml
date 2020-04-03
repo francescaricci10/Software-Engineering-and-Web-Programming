@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="362.0" prefWidth="438.0" style="-fx-background-color: powderblue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginPackage.Controller">
+   <children>
+      <Button fx:id="nuovaPrenotazione" layoutX="47.0" layoutY="199.0" mnemonicParsing="false" onAction="#mostraInsertPrenotazione" style="-fx-background-color: lightcyan turquoise;" text="Inserisci nuova prenotazione" />
+      <Button fx:id="visualizzaPrenotazioni" layoutX="45.0" layoutY="261.0" mnemonicParsing="false" onAction="#mostraVisualizzaPrenotazioni" style="-fx-background-color: lightcyan;" text="Visualizza prenotazioni " />
+      <Label layoutX="46.0" layoutY="39.0" text="Autenticazione avvenuta con successo!">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="93.0" text="Da qui è possibile inserire una nuova prenotazione, o " />
+      <Label layoutX="47.0" layoutY="130.0" text="visualizzare le prenotazioni " />
+   </children>
+</AnchorPane>
